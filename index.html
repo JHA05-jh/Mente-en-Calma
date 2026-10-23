@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente en Calma | Educación emocional para adolescentes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <a class="logo" href="#inicio" aria-label="Mente en Calma - inicio"><img src="logo.png" alt="Logo de Mente en Calma"></a>
+      <div class="nav-links">
+        <a href="#emociones">Emociones</a>
+        <a href="#hablar">Necesito hablar</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#ayuda">Ayuda</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <span class="tag">UN ESPACIO PARA TI</span>
+        <h1>Comprender lo que sientes también es <span>cuidarte.</span></h1>
+        <p>
+          Un espacio educativo pensado para adolescentes que quieren conocer sus emociones,
+          expresarlas de manera saludable y encontrar pequeñas herramientas para afrontar
+          situaciones difíciles.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#emociones">Explorar emociones</a>
+          <a class="btn secondary" href="#hablar">Quiero desahogarme</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de bienestar emocional">
+        <div class="sun"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="flower f1">🌸</div>
+        <div class="flower f2">🌼</div>
+        <div class="heart">💗</div>
+        <div class="girl">🧘🏻‍♀️</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <span class="eyebrow">¿QUÉ ENCONTRARÁS AQUÍ?</span>
+      <h2>Un lugar para entenderte un poquito más</h2>
+      <p class="section-text">
+        No tienes que saber explicar perfectamente lo que sientes. Puedes empezar
+        identificando una emoción, contar lo que te pasa y descubrir estrategias
+        sencillas que podrían ayudarte.
+      </p>
+      <div class="mini-cards">
+        <div><span>🧠</span><b>Comprende</b><p>Aprende qué significa cada emoción.</p></div>
+        <div><span>💬</span><b>Expresa</b><p>Pon en palabras aquello que llevas dentro.</p></div>
+        <div><span>🌱</span><b>Cuídate</b><p>Encuentra hábitos y estrategias saludables.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="emociones">
+      <span class="eyebrow">CONOCE TUS EMOCIONES</span>
+      <h2>Las emociones tienen algo que decirte</h2>
+      <p class="section-text">Selecciona una tarjeta para conocer su significado y algunas señales que pueden aparecer.</p>
+      <div id="emotionGrid" class="emotion-grid"></div>
+    </section>
+
+    <section class="talk-section section" id="hablar">
+      <div class="section-heading">
+        <span class="eyebrow">ESPACIO PARA TI</span>
+        <h2>¿Necesitas desahogarte?</h2>
+        <p>
+          Elige una situación que se parezca a lo que estás viviendo. Las preguntas no
+          diagnostican ni sustituyen a un profesional; sirven para ayudarte a reflexionar
+          y encontrar una forma saludable de afrontar lo que ocurre.
+        </p>
+      </div>
+
+      <div id="situationGrid" class="situation-grid"></div>
+
+      <div id="questionnaire" class="questionnaire hidden">
+        <div class="question-top">
+          <div>
+            <span class="eyebrow">REFLEXIONEMOS</span>
+            <h3 id="questionTitle"></h3>
+          </div>
+          <button class="close-btn" id="closeQuestionnaire">×</button>
+        </div>
+        <div id="progress"></div>
+        <div id="questionBox"></div>
+        <div class="question-actions">
+          <button class="btn secondary small" id="prevBtn">← Anterior</button>
+          <button class="btn primary small" id="nextBtn">Siguiente →</button>
+        </div>
+      </div>
+
+      <div id="resultBox" class="result-box hidden"></div>
+    </section>
+
+    <section class="tips section" id="consejos">
+      <span class="eyebrow">PEQUEÑAS ACCIONES</span>
+      <h2>Consejos para cuidar tu bienestar emocional</h2>
+      <div class="tips-grid">
+        <article class="tip-card"><span>🌬️</span><h3>Haz una pausa</h3><p>Cuando una emoción sea muy intensa, aléjate unos minutos de la situación y respira lentamente antes de actuar.</p></article>
+        <article class="tip-card"><span>📝</span><h3>Escribe lo que sientes</h3><p>Escribir puede ayudarte a ordenar pensamientos y reconocer qué está pasando dentro de ti.</p></article>
+        <article class="tip-card"><span>🗣️</span><h3>Habla con alguien</h3><p>Elegir a una persona de confianza puede hacer que un problema se sienta menos pesado.</p></article>
+        <article class="tip-card"><span>💧</span><h3>Cuida lo básico</h3><p>Dormir, alimentarte, hidratarte y moverte también forman parte del cuidado emocional.</p></article>
+        <article class="tip-card"><span>📵</span><h3>Descansa de las redes</h3><p>Si algo que ves en redes te hace sentir peor, date permiso para desconectarte un rato.</p></article>
+        <article class="tip-card"><span>🤍</span><h3>No te juzgues</h3><p>Sentir una emoción no te convierte en una mala persona. Lo importante es aprender qué hacer con ella.</p></article>
+        <article class="tip-card"><span>🎨</span><h3>Haz algo que te ayude</h3><p>Dibujar, escuchar música, caminar o realizar una actividad que disfrutes puede ayudarte a bajar la intensidad emocional.</p></article>
+        <article class="tip-card"><span>🤝</span><h3>Pedir ayuda está bien</h3><p>Si algo te supera, buscar apoyo de un adulto de confianza o un profesional es una forma de cuidarte.</p></article>
+      </div>
+    </section>
+
+    <section class="help-section section" id="ayuda">
+      <div class="help-box">
+        <span class="eyebrow">IMPORTANTE</span>
+        <h2>No tienes que afrontar todo a solas.</h2>
+        <p>
+          Si estás pasando por una situación que te supera, habla con un adulto de confianza,
+          familiar, docente, orientador o profesional de salud mental.
+        </p>
+        <div class="alert">
+          <strong>🚨 Si estás pensando en hacerte daño o ya te has lastimado:</strong>
+          busca ayuda de inmediato. Cuéntaselo a un adulto de confianza y acude a un servicio
+          de salud o a los servicios de emergencia de tu localidad. No te quedes a solas con ese riesgo.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo"><img src="logo.png" alt="Logo de Mente en Calma"></div>
+    <p>Proyecto educativo para adolescentes · 2026</p>
+    <p class="footer-note">Esta página tiene fines educativos y no reemplaza la atención psicológica o médica.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
